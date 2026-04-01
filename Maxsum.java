@@ -14,7 +14,7 @@ public class Maxsum {
 
         int result = maxsubarr(nums);
 
-        System.out.println(result);
+        System.out.println("The result of subarray with max sum" + result);
 
     }
 
