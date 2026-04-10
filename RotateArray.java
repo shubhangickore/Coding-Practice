@@ -18,15 +18,16 @@ public class RotateArray {
     }
 
     public static void rotate(int nums[], int k) {
-        int n = nums.length; // get size inside the method
-        int temp[] = new int[n]; // create temp inside the method
+        int n = nums.length; // get size of the array
+        int temp[] = new int[n]; // create temporary array
 
         for (int i = 0; i < n; i++) {
-            temp[(i + k) % n] = nums[i];
+            temp[(i + k) % n] = nums[i]; // place each element in its rotated position
+
         }
 
         for (int i = 0; i < n; i++) {
-            nums[i] = temp[i];
+            nums[i] = temp[i]; // copy back into original array
         }
     }
 }

@@ -15,7 +15,9 @@ public class MaxProductSubArr {
                 suffix = 1;
 
             prefix *= nums[i];
-            suffix *= nums[n - i - 1];
+            suffix *= nums[n - i - 1]; // By writing n - i - 1, you’re dynamically shifting the index if we use [n-1]
+                                       // o, you’d always multiply by the last element of the array it will never go
+                                       // backward
 
             maxprod = Math.max(maxprod, Math.max(prefix, suffix));
         }

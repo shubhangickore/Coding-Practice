@@ -9,7 +9,7 @@ public class Speedcalculation {
 
         if (timeMin < 1 || timeMin > 60) {
             System.out.println("Invalid input");
-            return;
+            return; // It stops execution of the program immediately.
         }
 
         double timehour = timeMin / 60.0; // Ensures decimal calculation

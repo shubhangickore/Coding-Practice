@@ -1,6 +1,7 @@
 import java.util.*;
 
-public class MinSizeSubSum {
+public class MinSizeSubSum { // For minimum size subarray sum, you need to find the smallest length subarray
+                             // whose sum is greater than or equal to a given target.
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 

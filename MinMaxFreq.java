@@ -20,8 +20,9 @@ public class MinMaxFreq {
         int minfreq = Integer.MAX_VALUE;
         int maxfreq = Integer.MIN_VALUE;
 
-        for (int val : freq.values()) {
-            minfreq = Math.min(minfreq, val);
+        for (int val : freq.values()) { // gives you all the counts (frequencies) of each element in the array.
+            minfreq = Math.min(minfreq, val); // compares the current minfreq with the current val.(infinite, 1)
+                                              // then(1,2)likewise
             maxfreq = Math.max(maxfreq, val);
         }
 
@@ -42,3 +43,15 @@ public class MinMaxFreq {
         }
     }
 }
+/*
+ * entry is one key-value pair from the map.
+ * 
+ * entrySet() lets you loop through all pairs.
+ * 
+ * entry.getKey() = element, entry.getValue() = frequency.
+ * Each pair (key, value) is represented by a Map.Entry<K,V> object.
+ * 
+ * entry.getKey() → gives the key (the element itself, like 1, 2, 3).
+ * 
+ * entry.getValue() → gives the value (the frequency count, like 2, 3, 1).
+ */

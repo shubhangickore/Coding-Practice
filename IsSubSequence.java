@@ -1,5 +1,7 @@
 import java.util.*;
 
+//A string s is a subsequence of string t if you can obtain 
+// s by deleting some (or none) characters from t without changing the relative order of the remaining characters.
 class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

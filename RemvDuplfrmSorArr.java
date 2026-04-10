@@ -20,7 +20,7 @@ public class RemvDuplfrmSorArr {
             }
         }
 
-        int k = i + 1;
+        int k = i + 1; // - i tracks the index of the last unique element hence + 1.
 
         System.out.println(k);
         for (int x = 0; x < k; x++) {
