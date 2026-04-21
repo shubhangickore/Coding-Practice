@@ -1,5 +1,6 @@
 import java.util.*;
 
+//The Power of Two program is designed to check whether a given integer n is a power of two.
 public class PowerofTwo {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
