@@ -1,4 +1,5 @@
-public int fib(int n) {
+public int fib(int n) { // The Fibonacci sequence is a classic concept in mathematics where each number
+                        // is the sum of the two preceding ones.
     // Step 1: Handle base cases directly
     if (n == 0)
         return 0; // F(0) = 0
