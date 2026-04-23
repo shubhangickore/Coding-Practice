@@ -28,3 +28,17 @@ public class RemvDuplfrmSorArr {
         }
     }
 }
+
+/*
+ * nput: nums = [1,1,2,2,3]
+ * 
+ * Start: i=0, nums[0]=1
+ * 
+ * j=1: nums[1]=1 → same as nums[i] → skip
+ * 
+ * j=2: nums[2]=2 ≠ nums[i]=1 → i=1, nums[1]=2
+ * 
+ * j=3: nums[3]=2 = nums[i]=2 → skip
+ * 
+ * j=4: nums[4]=3 ≠ nums[i]=2 → i=2, nums[2]=3
+ */

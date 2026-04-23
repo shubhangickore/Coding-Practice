@@ -25,3 +25,12 @@ public class PowerofTwo {
  * | Init | 16 | 15 | 10000 | 01111 | 00000 |
  * 
  */
+/*
+ * When we say the Power of Two program works with binary,
+ * it doesn’t mean you have to manually give it binary numbers like 1010.
+ * You can pass in normal integers like 2, 3, 16, etc. The program itself
+ * automatically
+ * works with the binary representation of those integers because computers
+ * store and process numbers
+ * in binary internally.
+ */

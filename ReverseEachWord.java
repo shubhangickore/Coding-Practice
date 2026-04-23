@@ -6,7 +6,11 @@ public class ReverseEachWord {
 
     public static String reverseword(String sentence) {
         String words[] = sentence.split(" ");
-        StringBuilder result = new StringBuilder();
+        StringBuilder result = new StringBuilder(); // StringBuilder is a mutable sequence of characters. It lets you
+                                                    // efficiently build a string step by step without creating lots of
+                                                    // temporary string objects.
+                                                    // So here, result is a StringBuilder that will hold the final
+                                                    // sentence after reversing each word.
 
         for (int i = 0; i < words.length; i++) {
             char[] ch = words[i].toCharArray();

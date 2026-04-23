@@ -22,3 +22,18 @@ public class AddDigits {
  * 
  * + 1 → shifts result into range 1–9.
  */
+
+/*
+ * NAIVE ITERATIVE APPROACH
+ * public static int addDigits(int num) {
+ * while (num >= 10) { // repeat until single digit
+ * int sum = 0;
+ * while (num > 0) {
+ * sum += num % 10; // add last digit
+ * num /= 10; // remove last digit
+ * }
+ * num = sum; // update num
+ * }
+ * return num;
+ * }
+ */
