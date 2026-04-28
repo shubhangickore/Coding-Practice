@@ -26,12 +26,14 @@ public class ReverseEachWord {
                 right--;
             }
 
-            result.append(new String(ch));
+            result.append(new String(ch)); // After reversing, ch is still a char array.new String(ch) converts it back
+                                           // into a proper String
             if (i < words.length - 1)
                 result.append(" ");
 
         }
-        return result.toString();
+        return result.toString();// StringBuilder is mutable, but we need to return a String..toString() converts
+                                 // the built sequence into a proper String object
 
     }
 

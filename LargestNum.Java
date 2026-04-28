@@ -1,3 +1,5 @@
+//This program returns the larget number by converting integers into string then sorting and comparing them it returns largestnum in string form.
+
 import java.util.*; // Needed for Arrays and Comparator
 
 public class LargestNum {
@@ -34,7 +36,7 @@ public class LargestNum {
         }
 
         // Step 5: Return the result
-        return largestNumStr.toString(); // FIX: variable name corrected
+        return largestNumStr.toString(); 
     }
 
     // Main method to test the program
@@ -49,3 +51,14 @@ public class LargestNum {
         System.out.println("Largest formed number: " + result);
     }
 }
+
+
+/*
+A Comparator in Java is an object that defines a custom way to compare two values.
+
+Normally, strings are compared alphabetically ("apple" < "banana").
+
+But here, we don’t want alphabetical order — we want the order that produces the largest concatenated number.
+new Comparator<String>() creates an anonymous inner class that implements the Comparator interface for String.
+
+Inside it, we override the compare method. This method is called by the sorting algorithm whenever it needs to decide the order between two strings. */
