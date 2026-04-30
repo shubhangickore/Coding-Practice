@@ -4,24 +4,20 @@ public class PeakIndexinMountainArray {
         int right = arr.length - 1;
 
         while (left < right) {
-            int mid = left + (left - right) / 2;
+            int mid = left + (right - left) / 2;
 
             if (arr[mid] < arr[mid + 1]) {
-                left = mid + 1;
-
-            }
-
-            else {
-                right = mid - 1;
+                left = mid + 1; // peak is on the right
+            } else {
+                right = mid; // peak is at mid or on the left arr[mid] >= arr[mid+1], the peak could be at
+                             // mid itself
             }
         }
-        return left;
-
+        return left; // or right, since left == right
     }
 
     public static void main(String args[]) {
         int arr[] = { 3, 12, 4, 5 };
-        System.out.println(peakIndex(arr));
+        System.out.println(peakIndex(arr)); // Output: 1
     }
-
 }
