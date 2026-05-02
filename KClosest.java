@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class KClosest {
     public static List<Integer> findKclosest(int arr[], int k, int x) {
         int left = 0;
@@ -17,6 +19,14 @@ public class KClosest {
         }
 
         return result;
+    }
+
+    public static void main(String args[]) {
+        int arr[] = { 1, 1, 2, 4, 5 };
+        int k = 4;
+        int x = 5;
+
+        System.out.println(findKclosest(arr, k, x));
     }
 
 }
