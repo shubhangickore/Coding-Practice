@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*; //nums1 = [1,2,2,3]  nums2 = [2,2,3] it returns [2,2,3] this program ensures intersection with possible duplicates.
 
 public class IntersectionArr {
     public static void main(String args[]) {
