@@ -63,3 +63,13 @@ public class ReverseLinkedList {
         printList(reversed);
     }
 }
+
+/*
+ * 
+ * Variable Meaning Example after 1st iteration
+ * temp temporarily holds next node 2
+ * curr.next = prev reverses pointer 1 → null
+ * prev grows reversed part 1 → null
+ * curr moves forward 2 → 3 → null
+ * 
+ */
