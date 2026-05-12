@@ -65,6 +65,6 @@ public class MergeKSortedLists {
             System.out.print(merged.val + " ");
             merged = merged.next;
         }
-        // Output: 1 1 2 3 4 4 5 6
+        // Output: 1 1 2 3 4 4 5 6 //
     }
 }
