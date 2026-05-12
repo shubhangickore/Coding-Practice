@@ -21,3 +21,23 @@ public class RemoveAdjacentDuplicates {
         System.out.println(removeduplicates(s));
     }
 }
+
+/*
+ * String = "abbaca"
+ * 
+ * c = 'a' → sb = "a"
+ * 
+ * c = 'b' → sb = "ab"
+ * 
+ * c = 'b' → last = 'b' = current 'b' → delete last → sb = "a" (skip new 'b')
+ * → both 'bb' gone.
+ * 
+ * c = 'a' → last = 'a' = current 'a' → delete last → sb = "" (skip new 'a')
+ * → both 'aa' gone.
+ * 
+ * c = 'c' → sb = "c"
+ * 
+ * c = 'a' → sb = "ca"
+ * 
+ * Final result = "ca"
+ */

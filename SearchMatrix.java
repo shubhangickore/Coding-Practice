@@ -11,7 +11,9 @@ public class SearchMatrix {
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
-            int row = mid / m; // Division gives the row number.
+            // 1D index to 2D coordinates
+
+            int row = mid / m; // Division gives the row number. mid / no.of rows
             int col = mid % m; // Modulo gives the column number.
 
             if (matrix[row][col] == target) {
@@ -36,4 +38,21 @@ public class SearchMatrix {
  * 
  * Together, they allow binary search to work seamlessly on a 2D matrix as if it
  * were a sorted 1D array.
+ */
+
+/*
+ * Quick Dry Run Example
+ * Matrix (3 rows × 4 columns):
+ * 
+ * [
+ * [1, 2, 3, 4],
+ * [5, 6, 7, 8],
+ * [9, 10, 11, 12]
+ * ]
+ * Suppose mid = 7.
+ * 
+ * row = 7 / 4 = 1 → second row.
+ * 
+ * col = 7 % 4 = 3 → fourth column.
+ * → matrix[1][3] = 8.
  */

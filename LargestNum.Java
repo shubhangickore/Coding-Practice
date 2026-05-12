@@ -1,4 +1,4 @@
-//This program returns the larget number by converting integers into string then sorting and comparing them it returns largestnum in string form.
+//This program returns the larget  in number by converting integers into string then sorting and comparing them it returns largestnum in string form.
 
 import java.util.*; // Needed for Arrays and Comparator
 
