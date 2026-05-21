@@ -27,12 +27,13 @@ public class MergeKSortedLists {
 
         // Extract the smallest node and add its next to the heap
         while (!minHeap.isEmpty()) {
-            ListNode smallest = minHeap.poll();
-            current.next = smallest;
-            current = current.next;
+            ListNode smallest = minHeap.poll();// Step 1: extract smallest node
+            current.next = smallest; // Step 2: attach it to result
+            current = current.next; // moving forward in the result list so the next node can be attached in the
+                                    // correct place.
 
             if (smallest.next != null) {
-                minHeap.add(smallest.next);
+                minHeap.add(smallest.next); // Step 4: push next node of that list
             }
         }
 
@@ -68,3 +69,16 @@ public class MergeKSortedLists {
         // Output: 1 1 2 3 4 4 5 6 //
     }
 }
+// We use a min‑heap to always pick the smallest node among the k lists.
+// Initially, we add the head of each list to the heap. Then, we repeatedly
+// extract the smallest node, attach it to our result, and push its next node
+// back into the heap. This ensures the merged list is built in sorted order in
+// one pass.
+
+// poll extracts smallest.
+
+// current.next = smallest attaches it.
+
+// current = current.next moves pointer forward.
+
+// if pushes the next node of that list back into heap.
