@@ -1,7 +1,7 @@
 
 # Coding Practice 💻
 
-This repository contains solutions to various coding problems for interview preparation and skill improvement.this contains various topics
+This repository contains solutions to various coding problems for interview preparation and skill improvement
 
 ## 📂 Topics Covered
 - Arrays
