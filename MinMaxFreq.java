@@ -55,3 +55,4 @@ public class MinMaxFreq {
  * 
  * entry.getValue() → gives the value (the frequency count, like 2, 3, 1).
  */
+// shows frequency of given no.
