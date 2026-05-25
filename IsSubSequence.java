@@ -34,3 +34,4 @@ class Main {
         return i == s.length();
     }
 }
+// shows string subsequence
