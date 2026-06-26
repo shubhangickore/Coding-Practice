@@ -12,15 +12,14 @@ public class Calculator {
     double add(double a, double b) {
         return a + b;
     }
-}
 
-public static void main(String args[]) {
-    Calculator c = new Calculator();
+    public static void main(String args[]) {
+        Calculator c = new Calculator();
 
-    System.out.println(c.add(10, 20)); // 30
-    System.out.println(c.add(10, 20, 30)); // 60
-    System.out.println(c.add(10.5, 20.5)); // 31.0
-
+        System.out.println(c.add(10, 20)); // 30
+        System.out.println(c.add(10, 20, 30)); // 60
+        System.out.println(c.add(10.5, 20.5)); // 31.0
+    }
 }
 /*
  * How it works?
@@ -35,3 +34,4 @@ public static void main(String args[]) {
  * 
  * This decision is made during compilation.
  */
+//this is the method overloading probllem 
