@@ -14,6 +14,7 @@ class RecentCounter {
                       // crash if the queue is empty.
 
         }
+        
         return q.size();
 
     }
