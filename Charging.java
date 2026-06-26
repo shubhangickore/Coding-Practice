@@ -26,3 +26,4 @@ public class Charging {
         System.out.println(count);
     }
 }
+// it is one of the question asked in tcs exam
